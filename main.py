@@ -267,13 +267,13 @@ def help_command(message):
     # For owner, show owner commands directly
     if user_id == OWNER_ID:
         help_text = (
-            "📖 *Bot Commands:*\n\n"
-            "🧑‍💻 `/like <region> <uid>` - Send likes to Free Fire UID\n"
-            "🔰 `/start` - Start or verify\n"
-            "🆘 `/help` - Show this help menu\n\n"
-            "👑 *Owner Commands:*\n"
-            "📈 `/remain` - Show all users' usage & stats\n\n"
-            "📞 *Support:* {OWNER_USERNAME}"
+            f"📖 *Bot Commands:*\n\n"
+            f"🧑‍💻 `/like <region> <uid>` - Send likes to Free Fire UID\n"
+            f"🔰 `/start` - Start or verify\n"
+            f"🆘 `/help` - Show this help menu\n\n"
+            f"👑 *Owner Commands:*\n"
+            f"📈 `/remain` - Show all users' usage & stats\n\n"
+            f"📞 *Support:* {OWNER_USERNAME}"
         )
         bot.reply_to(message, help_text, parse_mode="Markdown")
         return
@@ -288,12 +288,12 @@ def help_command(message):
 
     # Show regular user help
     help_text = (
-        "📖 *Bot Commands:*\n\n"
-        "🧑‍💻 `/like <region> <uid>` - Send likes to Free Fire UID\n"
-        "🔰 `/start` - Start or verify\n"
-        "🆘 `/help` - Show this help menu\n\n"
-        "📞 *Support:* {OWNER_USERNAME}\n"
-        "🔗 Join our channels for updates!"
+        f"📖 *Bot Commands:*\n\n"
+        f"🧑‍💻 `/like <region> <uid>` - Send likes to Free Fire UID\n"
+        f"🔰 `/start` - Start or verify\n"
+        f"🆘 `/help` - Show this help menu\n\n"
+        f"📞 *Support:* {OWNER_USERNAME}\n"
+        f"🔗 Join our channels for updates!"
     )
     bot.reply_to(message, help_text, parse_mode="Markdown")
 
